@@ -41,6 +41,17 @@
 
 /* --------------------------Special paddings/margins/text */
 
+html, body{
+    min-height: 100vh
+}
+
+body{
+    display: flex;
+    flex-direction: column;
+}
+
+
+
 h1,h2,h3,h4 {
     margin: 0;
 }
@@ -78,7 +89,8 @@ h1,h2,h3,h4 {
 }
 
 .content{
-    min-height: calc(100vh - 135px - 368.8px);
+    display: flex;
+    flex-grow: 1;
 }
 
 /* --------------------------Heading */
