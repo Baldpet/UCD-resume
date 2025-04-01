@@ -77,6 +77,10 @@ h1,h2,h3,h4 {
     margin-bottom: 40px;
 }
 
+.content{
+    min-height: calc(100vh - 135px - 368.8px);
+}
+
 /* --------------------------Heading */
 
 header {
@@ -232,7 +236,8 @@ footer {
 }
 
 .three-reasons-heading {
-    margin: 15px;
+    margin-bottom: 10px;
+
 }
 
 /* --------------------------Personal Info */
@@ -272,7 +277,10 @@ footer {
 
 @media only screen and (max-width: 600px) {
     .personal-info-item .value{
-        font-size: 14px;
+        font-size: 12px;
+    }
+    .personal-info-item .key{
+        font-size: 12px;
     }
 }
 
@@ -296,6 +304,10 @@ footer {
 .progress-section {
     margin: 40px 20px;
 
+}
+
+.timeline-item a{
+    color: white;
 }
 
 /* --------------------------Work History */
@@ -346,27 +358,96 @@ footer {
     margin-bottom: 30px;
 }
 
-/* --------------------------Contact Form */
+/* --------------------------Media Queries */
 
-.contact-heading {
-    font-family: "Exo", sans-serif;
-    font-family: 300;
-    margin-top: 25px;
-    margin-bottom: 20px;
+#project-tiles{
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    gap: 1rem;
+    width: 100%;
 }
 
-.center-form {
-    padding-top: 10px;
-    margin: 0 auto;
-    max-width: 70%; 
+#project-tiles .card{
+    width: 312px;
 }
 
-button[type="submit"] {
-    margin-top: 15px;
-    margin-bottom: 20px;
-    color: #fafafa;
-    background-color: #e84610;
+.card-body{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
 
+.buttons-container{
+    display: flex;
+    gap: 0.5rem;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+#project-tiles .card .card-button{
+    border: 1px black solid;
+    border-radius: 10px;
+    padding: 0.5rem 1rem;
+    display: inline-block;
+    text-decoration: none;
+    text-align: center;
+    width: calc(50% - 5px);
+}
+
+.visit-button{
+    background-color: #3498db;
+    color: white;
+}
+
+.code-button{
+    background-color: #9b59b6;
+    color: white
+}
+
+.info-button{
+    background-color: #525252;
+    color: white;
+}
+
+.card-button:hover{
+    color: white;
+    transform: scale(1.05);
+}
+
+
+.stack-icons{
+    margin: 15px 0;
+}
+
+#project-tiles .card-footer i,
+#project-tiles .card-footer img{
+    height: 32px;
+    width: 32px;
+    font-size: 2rem;
+    vertical-align: top;
+}
+
+.more-project{
+    margin: 2rem 0;
+}
+
+.more-info-container{
+    margin: 2rem auto 1rem;
+}
+
+.more-img{
+    max-width: 100%;
+}
+
+.more-img-container{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.more-header{
+    margin-bottom: 1rem;
 }
 
 /* --------------------------Media Queries */
@@ -379,3 +460,4 @@ button[type="submit"] {
         max-width: 50%; 
     }
 }
+
